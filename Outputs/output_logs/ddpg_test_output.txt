@@ -1,0 +1,62 @@
+============================================================
+RUN CONFIGURATION:
+============================================================
+  batch: 32
+  c_max: 180
+  c_min: 60
+  cfg_fp: networks/double.sumocfg
+  clip_ratio: 0.2
+  demand: dynamic
+  entropy_coef: 0.01
+  eps: 0.01
+  g_max: 30
+  g_min: 5
+  gamma: 0.99
+  hidden_act: elu
+  l: 1
+  load: True
+  load_replay: False
+  lr: 0.0001
+  lrc: 0.001
+  lre: 1e-08
+  marl_coord: False
+  mode: test
+  mu: 3
+  n: 1
+  n_hidden: 3
+  net_fp: networks/double.net.xml
+  nogui: True
+  nreplay: 10000
+  nsteps: 1
+  offset: 0.25
+  omega: 1
+  port: 9000
+  ppo_epochs: 10
+  r: 3
+  sat_flow: 0.38
+  save: False
+  save_path: Outputs/saved_models
+  save_replay: Outputs/saved_replays
+  save_t: 120
+  scale: 1.4
+  sim: double
+  sim_len: 3600
+  target_freq: 50
+  tau: 0.005
+  theta: 45
+  tsc: ddpg
+  update_freq: 900
+  updates: 10000
+  y: 2
+============================================================
+
+start running main...
+networks/double.net.xml
+SUCCESSFULLY GENERATED NET DATA
+[0.01]
+[0]
+Starting up all processes...
+...finishing all processes
+Namespace(n=1, l=0, sim='double', port=9000, net_fp='networks/double.net.xml', cfg_fp='networks/double.sumocfg', mode='test', tsc='ddpg', sim_len=3600, nogui=True, scale=1.4, demand='dynamic', offset=0.25, g_min=5, y=2, r=3, c_min=60, c_max=180, sat_flow=0.38, update_freq=900, theta=45, omega=1, mu=3, eps=0.01, nsteps=1, nreplay=10000, batch=32, gamma=0.99, updates=10000, target_freq=50, lr=0.0001, lrc=0.001, lre=1e-08, hidden_act='elu', n_hidden=3, save_path='Outputs/saved_models', save_replay='Outputs/saved_replays', load_replay=False, save_t=120, save=False, load=True, tau=0.005, g_max=30, clip_ratio=0.2, ppo_epochs=10, entropy_coef=0.01, marl_coord=False)
+...finish running main
+run time 7.565250555674235
